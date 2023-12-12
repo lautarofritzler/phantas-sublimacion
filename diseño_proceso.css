@@ -1,0 +1,196 @@
+/* 
+colores:
+Celeste: #4F7ED0
+Azul: #1D2C78
+Negro: #000000
+Gris: #EEEDF3
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@500&display=swap');
+@font-face {
+	font-family: Browser;
+	src: url('./fonts/Browser.ttf')
+}
+
+* {
+	margin: 0.2rem;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Abel', sans-serif;
+	background: #EEEDF3;
+}
+
+header {
+	background: #1D2C78;
+	color: #4F7ED0;
+}
+
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+}
+
+.marca h1 {
+	font-family: Browser;
+	font-weight: lighter;
+	color: white;
+	font-size: 2.2rem;
+}
+
+.marca p {
+	font-family: 'Abel', sans-serif;
+	color: white;
+	font-weight: lighter;
+	font-size: 1,6rem;
+}
+
+.logo img {
+	width: 3.8em;
+}
+
+ul {
+	min-width: 500px;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+ul li{
+	font-size: 1.2rem;
+	list-style: none;
+	border-width: 0.5rem;
+	line-height: 0.5rem;
+	padding: 0.9rem;
+	border: 0.15rem solid #4F7ED0;
+	margin: 0.5rem;
+	border-radius: 1rem 1rem 1rem 1rem;
+	text-decoration: none;
+}
+
+a {
+	color:white ;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+h2{
+	margin: 0.4em;
+	font-family: Browser;
+	font-weight: lighter;
+	color: #1D2C78;
+	font-size: 3rem;
+}
+
+.intro {
+	font-size: 1.4rem;
+	margin-left: 1.2rem;
+}
+
+.contenedor {
+	display: flex;
+	height: auto;
+	flex-wrap: wrap;
+	gap: 10px 30px;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.proceso{
+	width: 99%;
+	background: white;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 4px solid #4F7ED0;
+	margin: 1.2rem
+}
+
+.descripcion{
+	display: flex;
+	width: 60%;
+	flex-direction: column;
+}
+
+.descripcion h4{
+	color: #1D2C78;
+	font-size: 1.7rem;
+	margin: 0.5rem;
+}
+
+.descripcion p{
+	font-size: 1.4rem;
+	text-align: justify;
+	margin: 0.5rem
+}
+
+.imagenpaso{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagenpaso img {
+	display: block;
+	width: 10em;
+}
+
+#envioimg{
+	display: block;
+	width: 6em;
+}
+
+
+#formatoimg {
+	display: block;
+	width: 3.5em;
+}
+
+.producto h4{
+	margin: 0.5rem;
+	font-size: 1.8em;
+	font-weight: bolder;
+	color: #1D2C78;
+}
+
+.producto h5{
+	margin-bottom: 1rem;
+	font-size: 1.8em;
+	font-weight: bolder;
+	color: #1D2C78;
+	text-align: center;
+}
+
+.producto p{
+	font-style: italic;
+	font-size: 1em;
+	text-align: center;
+	margin: 0.5rem;
+}
+
+
+
+
+@media (max-width: 800px) {
+	navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+
+@media (min-width: 500px) and (max-width: 800px) {
+	ul{
+		flex-direction: column;
+		align-items: flex-start;
+	}

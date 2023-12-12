@@ -1,0 +1,155 @@
+/* 
+colores:
+Celeste: #4F7ED0
+Azul: #1D2C78
+Negro: #000000
+Gris: #EEEDF3
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@500&display=swap');
+@font-face {
+	font-family: Browser;
+	src: url('./fonts/Browser.ttf')
+}
+
+
+
+* {
+	margin: 0.2rem;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Abel', sans-serif;
+	background: #EEEDF3;
+}
+
+header {
+	background: #1D2C78;
+	color: #4F7ED0;
+}
+
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+}
+
+.marca h1 {
+	font-family: Browser;
+	font-weight: lighter;
+	color: white;
+	font-size: 2.2rem;
+}
+
+.marca p {
+	font-family: 'Abel', sans-serif;
+	color: white;
+	font-weight: lighter;
+	font-size: 1,6rem;
+}
+
+.logo img {
+	width: 3.8em;
+}
+
+ul {
+	min-width: 500px;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+ul li{
+	font-size: 1.2rem;
+	list-style: none;
+	border-width: 0.5rem;
+	line-height: 0.5rem;
+	padding: 0.9rem;
+	border: 0.15rem solid #4F7ED0;
+	margin: 0.5rem;
+	border-radius: 1rem 1rem 1rem 1rem;
+	text-decoration: none;
+}
+
+a {
+	color:white ;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+h2{
+	margin: 0.4em;
+	font-family: Browser;
+	font-weight: lighter;
+	color: #1D2C78;
+	font-size: 3rem;
+}
+
+i {
+	font-size: 8rem;
+	color:#1D2C78 ;
+}
+
+.sec1{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sec2{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec2 img{
+	width: 10rem;
+}
+
+.sec1 p{
+	font-size: 1.4rem;
+	text-align: center;
+	margin: 1rem;
+}
+
+.redes{
+	display: flex;
+	flex-direction: column;
+}
+
+.logoredes{
+	display: flex;
+	gap: 4rem;
+}
+
+
+@media (max-width: 800px) {
+	.navbar{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+	ul{
+		flex-direction: column;
+		align-items: flex-start;
+	}
