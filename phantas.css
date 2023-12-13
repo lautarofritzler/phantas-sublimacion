@@ -40,6 +40,7 @@ header {
 
 .logo {
 	display: flex;
+	align-items: center;
 }
 
 .marca h1 {
@@ -60,15 +61,14 @@ header {
 	width: 3.8em;
 }
 
-.navbar ul {
+ul {
 	min-width: 500px;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
 
 }
 
-.navbar ul li{
+ul li{
 	font-size: 1.2rem;
 	list-style: none;
 	border-width: 0.5rem;
@@ -78,20 +78,28 @@ header {
 	margin: 0.5rem;
 	border-radius: 1rem 1rem 1rem 1rem;
 	text-decoration: none;
-
 }
-
 
 a {
 	color:white ;
 	font-weight: bold;
 	text-decoration: none;
+	transition: all 1s ease;
+}
+
+a:hover {
+	color: #1D2C78;
+}
+
+ul li:hover{
+	border: 0.15rem solid white;
+	border-radius: 1rem 1rem 1rem 1rem;
+	background-color: white;
 }
 
 .contenedor {
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 .caja1 {
@@ -102,7 +110,6 @@ a {
 .caja2 {
 	width: 40%;
 	display: flex;
-	justify-content: flex-start;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -117,9 +124,9 @@ h2{
 	font-size: 3rem;
 }
 
-h3{
+.caja1 h3{
 	font-family: 'Abel', sans-serif;
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 1.7rem;
 	width: auto;
 	text-align: center;
@@ -143,57 +150,31 @@ h3{
 	font-weight: 500;
 }
 
-.slider-frame {
-  width: 35.8em;
-  height: auto;
-  overflow: hidden;
+footer{
+	text-align: center;
 }
 
-.slider-frame ul {
-  display: flex;
-  padding: 0;
-  width: 500%;
-  
-  
-  animation: slide 20s infinite alternate ease-in-out;
+#logolargo{
+	width: 10em;
 }
 
-#listaslider {
-  width: 100%;
-  list-style: none;
-}
-
-.slider-frame img {
-  width: 35em;
-}
-
-
-@keyframes slide {
-  0% {margin-left: 0;}
-  20% {margin-left: 0;}
-  
-  25% {margin-left: -100%;}
-  45% {margin-left: -100%;}
-  
-  50% {margin-left: -200%;}
-  70% {margin-left: -200%;}
-  
-  75% {margin-left: -300%;}
-  100% {margin-left: -300%;}
-}
-
-
-
-
-@media (max-width: 800px) {
-	.navbar{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-}
-
-@media (min-width: 500px) and (max-width: 800px) {
+@media (max-width: 576px) {
 	ul{
 		flex-direction: column;
 		align-items: flex-start;
 	}
+
+	.contenedor{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.caja1{
+		width: 100%;
+	}
+
+}
+
+
+
+
